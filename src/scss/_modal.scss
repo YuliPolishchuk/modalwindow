@@ -14,12 +14,12 @@
 
     &_margin {
       margin-bottom: 20px;
+      text-align: left;
     }
   }
 
   &__window {
     max-width: 600px;
-    min-width: 25rem;
     background-color: $modal-background;
     padding: 30px 40px;
     position: absolute;
@@ -32,7 +32,7 @@
   &__window-cross {
     position: absolute;
     top: 5px;
-    left: 95%;
+    right: 2%;
     padding: 0 5px;
     padding-bottom: 2px;
     font-size: 0.9em;
@@ -70,6 +70,7 @@
     }
   }
 }
+
 @keyframes click {
   0% {
     transform:translate(-50%, 0) scale(0.5);
@@ -79,3 +80,32 @@
     transform:translate(-50%, -50%) scale(1);
   }
 }
+
+@media screen and (max-width:1000px) {
+  .modal {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .modal {
+    font-size: 1.1em;
+
+    &__window{
+      padding: 30px 20px;
+    }
+  }
+}
+
+@media screen and (max-width:450px) {
+  .modal {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width:340px) {
+  .modal {
+    font-size: 0.65em;
+  }
+}
+
