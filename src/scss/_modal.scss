@@ -1,10 +1,13 @@
+ body {
+  background-color: #e0e5ea;
+  }
+
 .modal {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: $font-stack;
-  background-color: #e0e5ea;
   font-size: $text-size;
   color: $color-grey;
   position: relative;
