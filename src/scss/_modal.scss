@@ -71,41 +71,13 @@
   }
 }
 
+
 @keyframes click {
   0% {
-    transform:translate(-50%, 0) scale(0.5);
+    transform: translate(-50%, 3rem) scale(0.5);
   }
-
   100% {
-    transform:translate(-50%, -50%) scale(1);
-  }
-}
-
-@media screen and (max-width:1000px) {
-  .modal {
-    font-size: 1.3em;
-  }
-}
-
-@media screen and (max-width:700px) {
-  .modal {
-    font-size: 1.1em;
-
-    &__window{
-      padding: 30px 20px;
-    }
-  }
-}
-
-@media screen and (max-width:450px) {
-  .modal {
-    font-size: 0.9em;
-  }
-}
-
-@media screen and (max-width:340px) {
-  .modal {
-    font-size: 0.7em;
+    transform: translate(-50%, 0) scale(1);
   }
 }
 
