@@ -3,14 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-color: #e0e5ea;
+}
 .modal {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Lato", sans-serif;
-  background-color: #e0e5ea;
   font-size: 1.5em;
   color: #949da5;
   position: relative;
@@ -27,12 +28,13 @@
 
 .modal__window {
   max-width: 600px;
+  min-width: 300px;
   background-color: #182c3d;
   padding: 30px 40px;
   position: absolute;
-  top: 32.5%;
+  top: 5rem;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   display: none;
 }
 
@@ -77,36 +79,10 @@
 
 @keyframes click {
   0% {
-    transform: translate(-50%, 0) scale(0.5);
+    transform: translate(-50%, 3rem) scale(0.5);
   }
   100% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, 0) scale(1);
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .modal {
-    font-size: 1.3em;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .modal {
-    font-size: 1.1em;
-  }
-  .modal__window {
-    padding: 30px 20px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .modal {
-    font-size: 0.9em;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .modal {
-    font-size: 0.7em;
-  }
-}
